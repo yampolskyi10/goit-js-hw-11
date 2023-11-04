@@ -1,14 +1,26 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна сторінка</title>
+    <!-- Підключення стилів CSS для головної сторінки, якщо потрібно -->
+    <link rel="stylesheet" href="index-styles.css">
+</head>
+<body>
+    <!-- Вміст головної сторінки -->
+    
+    <!-- Підключення файлів JavaScript в кінці body -->
+    <!-- Підключення файлу JavaScript для основної логіки -->
+    <script src="js/main.js"></script>
+    
+    <!-- Підключення файлу JavaScript для взаємодії з API Pixabay -->
+    <script src="js/pixabay.js"></script>
+    
+    <!-- Підключення файлу JavaScript для роботи з повідомленнями -->
+    <script src="js/notifications.js"></script>
+    
+    <!-- Підключення файлу JavaScript для роботи з галереєю -->
+    <script src="js/gallery.js"></script>
+</body>
 </html>

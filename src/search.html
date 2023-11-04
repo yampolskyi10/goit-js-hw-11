@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пошук зображень</title>
+    <!-- Підключення стилів CSS для сторінки пошуку, якщо потрібно -->
+    <link rel="stylesheet" href="search-styles.css">
+</head>
+<body>
+    <!-- Форма пошуку та інші елементи сторінки пошуку -->
+    <form class="search-form" id="search-form">
+        <input
+            type="text"
+            name="searchQuery"
+            autocomplete="off"
+            placeholder="Search images..."
+        />
+        <button type="submit">Search</button>
+    </form>
+
+    <!-- Галерея для відображення знайдених зображень -->
+    <div class="gallery">
+        <!-- Картки зображень будуть тут -->
+    </div>
+
+    <!-- Підключення файлу JavaScript для основної логіки сторінки пошуку -->
+    <script src="search-main.js"></script>
+    
+    <!-- Підключення файлу JavaScript для взаємодії з API Pixabay -->
+    <script src="pixabay.js"></script>
+    
+    <!-- Підключення файлу JavaScript для роботи з повідомленнями -->
+    <script src="notifications.js"></script>
+    
+    <!-- Підключення файлу JavaScript для роботи з галереєю -->
+    <script src="gallery.js"></script>
+</body>
+</html>
