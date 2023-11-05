@@ -6,15 +6,21 @@
     <title>Головна сторінка</title>
 </head>
 <body>
-  
+    <form class="search-form" id="search-form">
+        <input
+            type="text"
+            name="searchQuery"
+            autocomplete="off"
+            placeholder="Search images..."
+        />
+        <button type="submit">Search</button>
+    </form>
+    
+    <div class="gallery"></div>
+
     <script src="./js/index.js" type="module"></script>
-    
-   
     <script src="./js/pixabay.js" type="module"></script>
- 
     <script src="./js/notification.js" type="module"></script>
-    
-   
     <script src="./js/gallery.js" type="module"></script>
 </body>
 </html>
