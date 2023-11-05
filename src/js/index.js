@@ -1,27 +1,27 @@
-// Підключення бібліотек та файлів
+
 import axios from 'axios';
 import notiflix from 'notiflix';
 
-// Змінні для відстеження поточної сторінки та результатів
+
 let currentPage = 1;
 const perPage = 40;
 let searchQuery = '';
 
-// Пошук
+
 const form = document.getElementById('search-form');
 const gallery = document.querySelector('.gallery');
 const loadMoreButton = document.querySelector('.load-more');
 
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
-  gallery.innerHTML = ''; // Очищення галереї
+  gallery.innerHTML = ''; 
   currentPage = 1;
   searchQuery = form.querySelector('input[name="searchQuery"]').value;
   searchImages();
 });
 
 async function searchImages() {
-  const apiKey = 'YOUR_API_KEY';
+  const apiKey = '40480914-f5b9761491a6395ad02f7dc1d';
   const url = `https://pixabay.com/api/?key=${apiKey}&q=${searchQuery}&image_type=photo&orientation=horizontal&safesearch=true&page=${currentPage}&per_page=${perPage}`;
 
   try {
@@ -85,5 +85,5 @@ loadMoreButton.addEventListener('click', () => {
   searchImages();
 });
 
-// Виклик функції при завантаженні сторінки
+
 searchImages();

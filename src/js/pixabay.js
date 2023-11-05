@@ -1,8 +1,8 @@
-// pixabay.js
 
-// Функція для взаємодії з API Pixabay та пошуку зображень
+
+
 async function searchImages(searchQuery, currentPage, perPage) {
-    const apiKey = 'ВАШ_КЛЮЧ_API_PIXABAY'; // Замініть 'ВАШ_КЛЮЧ_API_PIXABAY' на свій ключ API Pixabay
+    const apiKey = '40480914-f5b9761491a6395ad02f7dc1d'; 
     const url = `https://pixabay.com/api/?key=${apiKey}&q=${searchQuery}&image_type=photo&orientation=horizontal&safesearch=true&page=${currentPage}&per_page=${perPage}`;
   
     try {
@@ -16,6 +16,6 @@ async function searchImages(searchQuery, currentPage, perPage) {
     }
   }
   
-  // Експортуємо функцію, щоб її можна було використовувати в іншому JavaScript-файлі
+ 
   export { searchImages };
   
