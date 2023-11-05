@@ -6,13 +6,23 @@
     <title>Головна сторінка</title>
 </head>
 <body>
-  
-    <script src="./js/index.js" type="module"></script>
+    <!-- Додана розмітка форми, кнопки та блоку .gallery -->
+    <form class="search-form" id="search-form">
+        <input
+            type="text"
+            name="searchQuery"
+            autocomplete="off"
+            placeholder="Search images..."
+        />
+        <button type="submit">Search</button>
+    </form>
     
-<script src="./js/pixabay.js" type="module"></script>
+    <div class="gallery"></div>
 
+    <!-- Підключення JavaScript-файлів -->
+    <script src="./js/index.js" type="module"></script>
+    <script src="./js/pixabay.js" type="module"></script>
     <script src="./js/notification.js" type="module"></script>
-    
     <script src="./js/gallery.js" type="module"></script>
 </body>
 </html>
